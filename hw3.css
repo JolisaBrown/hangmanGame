@@ -1,0 +1,25 @@
+body {
+    background-color: lightblue;
+    text-align: center
+}
+
+.row {
+    display: flex;
+}
+
+/* Create three equal columns that sits next to each other */
+.column {
+    flex: 50.00%;
+    padding: 5px;
+}
+
+
+img.keyboard {
+    float: right;
+    width:80px;
+    height:80px;
+}
+
+#c1{
+	background-color: red;
+}

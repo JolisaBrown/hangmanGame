@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+
+<html lang=“en-US”>
+<head>
+  <title> Hangman </title>
+  <meta name="author" content="Jolisa Brown"></meta>
+  <meta name="viewport" content="width=device-width", initial scale="1.0">
+  <link rel="stylesheet" type="text/css" href="hw3.css">
+
+</head>
+
+
+
+<body  >
+  <h2> Let's Play Hangman! </h2>
+
+  
+   <div class="row">
+    
+   <div class="column">
+      <h3 id='timer'></h3>
+    </div>
+    
+    <div class="column">
+      <h3 id='score'></h3>
+    </div> 
+    
+    <div class="column">
+      <h3 id='strikes'></h3>
+    </div>
+
+    <div class="column">
+      <h3 id='difficulty'></h3>
+    </div>
+   </div> 
+    
+
+  </div>
+   <div class = "row" >
+
+    <div class="column">
+      <h3 id= "bestScore"> </h3>
+    </div>
+    
+    <div class="column">
+      <h3 id= "category"></h3>
+    </div>
+     
+    <div class="column"> 
+      <h3 id= "solvedWords"></h3>
+    </div>
+
+   </div>  
+
+
+  <div class = "row">
+
+    <div class="column">
+      <canvas id="firstCanvas" width="725" height="350" > </canvas>
+      <h3 id="youlost"> </h3>
+
+      <div class = "row" id="playAgain">
+        <div class = "column">
+          <button onclick="playAgainAnimal()" id="animalPlay" value = "Animals" >Play again with Animals Category</button>
+
+        </div>
+        
+        <div class = "column">
+          <button onclick="playAgainPresident()" id="presidentPlay" value = "Presidents" >Play again with Presidents Category</button>
+
+        </div>
+
+        <div class= "column">
+          <button onclick="playAgainColors()" id="colorPlay" value = "Colors" >Play again with Colors Category</button>
+
+        </div>  
+
+
+      </div>  
+
+
+
+    
+    <!-- these are the letter buttons-->
+    <div class="column">
+      <input type="button" value="A" name="letter"  onclick = "writeLetters('A')"> 
+      <input type="button" value="B" name="letter"  onclick = "writeLetters('B')"> 
+      <input type="button" value="C" name="letter"  onclick = "writeLetters('C')"> 
+      <input type="button" value="D" name="letter"  onclick = "writeLetters('D')">
+      <input type="button" value="E" name="letter"  onclick = "writeLetters('E')"> 
+      <input type="button" value="F" name="letter"  onclick = "writeLetters('F')"> 
+      <input type="button" value="G" name="letter"  onclick = "writeLetters('G')">
+      <input type="button" value="H" name="letter"  onclick = "writeLetters('H')"> 
+      <input type="button" value="I" name="letter"  onclick = "writeLetters('I')">  
+    
+      <input type="button" value="J" name="letter"  onclick = "writeLetters('J')">
+      <input type="button" value="K" name="letter"  onclick = "writeLetters('K')">
+      <input type="button" value="L" name="letter"  onclick = "writeLetters('L')">
+      <input type="button" value="M" name="letter"  onclick = "writeLetters('M')">
+      <input type="button" value="N" name="letter"  onclick = "writeLetters('N')">
+      <input type="button" value="O" name="letter"  onclick = "writeLetters('O')">
+      <input type="button" value="P" name="letter"  onclick = "writeLetters('P')">
+      <input type="button" value="Q" name="letter"  onclick = "writeLetters('Q')">
+   
+      <input type="button" value="R" name="letter"  onclick = "writeLetters('R')"> 
+      <input type="button" value="S" name="letter"  onclick = "writeLetters('S')"> 
+      <input type="button" value="T" name="letter"  onclick = "writeLetters('T')"> 
+      <input type="button" value="U" name="letter"  onclick = "writeLetters('U')"> 
+      <input type="button" value="V" name="letter"  onclick = "writeLetters('V')"> 
+      <input type="button" value="W" name="letter"  onclick = "writeLetters('W')">
+      <input type="button" value="X" name="letter"  onclick = "writeLetters('X')">
+      <input type="button" value="Y" name="letter"  onclick = "writeLetters('Y')">
+      <input type="button" value="Z" name="letter"  onclick = "writeLetters('Z')"> 
+    </div> 
+    
+   </div>
+ </div>
+
+
+   
+   
+   
+   <canvas id="myCanvas" width="700" height="150" > </canvas>
+
+
+
+
+
+
+</body>
+
+
+
+<footer>
+	<script src="linked_page.js"></script>
+</footer>	
